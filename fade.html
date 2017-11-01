@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade Jquery</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+       //alert("worked!"); 
+        
+        $("#fadein").click(function(){
+           $(".data").fadeIn('fast'); 
+        });
+        
+            $("#fadeout").click(function(){
+           $(".data").fadeOut('slow'); 
+        });
+        
+            $("#fadetoggole").click(function(){
+           $(".data").fadeToggle(1000); 
+                        
+        });
+        
+        $("#fadeto").click(function(){
+           $(".data").fadeTo('slow', 0.4); 
+    });
+    });
+    </script>
+</head>
+    <body>
+    
+    <h1>Hey ! JQuery</h1>
+    <div class="data">
+    <p>Sample Paragraph</p>
+    <span>We can see Fade Example here</span>
+    <p>So lets start!</p>
+    </div>
+        
+        <button id="fadein">Fade In</button>
+        <button id="fadeout">Fade out</button>
+        <button id="fadeto">Fade To</button>
+        <button id="fadetoggole">Fade Toggole</button>
+    </body>
+    
+</html>

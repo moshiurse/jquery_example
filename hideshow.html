@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide Show Jquery</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+       //alert("worked!"); 
+        
+        $("#hide").click(function(){
+           $(".data").hide('fast'); 
+        });
+        
+            $("#show").click(function(){
+           $(".data").show('slow'); 
+        });
+        
+            $("#toggole").click(function(){
+           $(".data").toggle('slow'); 
+        });
+    });
+    
+    </script>
+</head>
+    <body>
+    
+    <h1>Hey ! JQuery</h1>
+    <div class="data">
+    <p>Sample Paragraph</p>
+    <span>We can see hide show toggole here</span>
+    </div>
+        
+        <button id="hide">Hide This</button>
+        <button id="show">Show This</button>
+        <button id="toggole">Toggole This</button>
+    </body>
+    
+</html>

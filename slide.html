@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Jquery</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+       //alert("worked!"); 
+        
+        $("#animation").click(function(){
+           $(".data").animate({left: 200,height: 300, width: 300, opacity: '0.4'}, 1000, function(){
+               alert("Callback Method Started!");
+           }); 
+        });
+        
+        $("#stop").click(function(){
+           $(".data").stop(); 
+        });
+        
+    });
+    
+    </script>
+</head>
+    <body>
+     <button id="animation">Animation</button>
+        <button id="stop">Stop</button>
+    <h1>Hey ! JQuery</h1>
+    <div class="data" style="height: 300; width: 50; background: green; position: absolute;">
+    <p>Sample Paragraph</p>
+    <span>We can see hide show toggole here</span>
+    </div>
+        
+       
+    </body>
+    
+</html>
