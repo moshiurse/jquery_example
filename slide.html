@@ -9,14 +9,16 @@
     $(document).ready(function(){
        //alert("worked!"); 
         
-        $("#animation").click(function(){
-           $(".data").animate({left: 200,height: 300, width: 300, opacity: '0.4'}, 1000, function(){
-               alert("Callback Method Started!");
-           }); 
+        $("#slideup").click(function(){
+           $(".data").slideUp('fast'); 
         });
         
-        $("#stop").click(function(){
-           $(".data").stop(); 
+            $("#slidedown").click(function(){
+           $(".data").slideDown('slow'); 
+        });
+        
+            $("#slidetoggole").click(function(){
+           $(".data").slideToggle(1000); 
         });
         
     });
@@ -24,10 +26,11 @@
     </script>
 </head>
     <body>
-     <button id="animation">Animation</button>
-        <button id="stop">Stop</button>
+     <button id="slideup">slide up</button>
+        <button id="slidedown">slide down</button>
+        <button id="slidetoggole">slide toggole</button>
     <h1>Hey ! JQuery</h1>
-    <div class="data" style="height: 300; width: 50; background: green; position: absolute;">
+    <div class="data" >
     <p>Sample Paragraph</p>
     <span>We can see hide show toggole here</span>
     </div>
