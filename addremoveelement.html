@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Jquery</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+       $("#append").click(function(){
+           $("#me").append("Moshiur Rahman");
+       })
+        
+        $("#prepend").click(function(){
+           $("#you").prepend("You are ");
+       })
+        
+        $("#before").click(function(){
+           $("#quote").before("Hurt me with a truth but ");
+       })
+        
+        $("#after").click(function(){
+           $("#quote").after(" with a lie.");
+       })
+        
+         $("#remove").click(function(){
+           $(".data").remove();
+       })
+        
+        $("#empty").click(function(){
+           $(".data").empty();
+       })
+        
+    });
+    
+    </script>
+</head>
+    <body>
+        <button id="append">Append</button>
+        <button id="prepend">Prepend</button>
+        <button id="before">Before</button>
+        <button id="after">After</button>
+        <button id="remove">Remove</button>
+        <button id="empty">Empty</button>
+    <h1>Hey ! JQuery</h1>
+    <div class="data" style="background: green; position: absolute;">
+        <p id="me">I Am - </p>
+        <p id="you">My Beauty</p>
+        <p id="quote">Never Comfort me</p>
+    </div>
+        
+       
+    </body>
+    
+</html>
