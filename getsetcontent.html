@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Jquery</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+       //alert("worked!"); 
+       
+        $("#showhtml").click(function(){
+          alert($(".data").html());
+        });
+        
+        $("#showtext").click(function(){
+          alert($(".data").text()); 
+        });
+                
+        
+                
+        $("#showval").click(function(){
+           alert($("#name").val());
+        });
+        
+    });
+    
+    </script>
+</head>
+    <body>
+        <button id="showtext">Text</button>
+        <button id="showhtml">Html</button>
+        <button id="showval">Value</button>
+    <h1>Hey ! JQuery</h1>
+    <div class="data">
+    <p id="pa">Sample Paragraph</p>
+    <span>We can see Something new here</span>
+    <input type="text" name="name" id="name">
+    </div>
+        
+       
+    </body>
+    
+</html>
