@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Jquery</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    <style>
+        .clr{
+            background-color: green;
+            color: greenyellow;
+        }
+        
+        .thing{
+            border: 1px solid black;
+        }
+    
+    </style>
+    <script>
+    $(document).ready(function(){
+       
+        $("#add").click(function(){
+            $(".data").addClass("clr thing");
+        })
+        
+        $("#remove").click(function(){
+            $(".data").removeClass("clr");
+        })
+        
+    });
+    
+    </script>
+</head>
+    <body>
+     <button id="add">Add Class</button>
+        <button id="remove">Remove Class</button>
+    <h1>Hey ! JQuery</h1>
+    <div class="data">
+    <p>Sample Paragraph</p>
+    <span>We can see hide show toggole here</span>
+    </div>
+        
+       
+    </body>
+    
+</html>
